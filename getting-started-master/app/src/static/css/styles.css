@@ -1,5 +1,7 @@
 body {
-    background-color: #f4f4f4;
+    background: rgb(151,154,0);
+    background: linear-gradient(90deg, rgba(151,154,0,0.5858718487394958) 0%, rgba(242,211,252,1) 35%,
+		rgba(0,241,255,0.5242471988795518) 100%);
     margin-top: 50px;
     font-family: 'Lato';
 }
