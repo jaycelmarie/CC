@@ -75,6 +75,7 @@ function AddItemForm({ onNewItem }) {
 
     const submitNewItem = e => {
         e.preventDefault();
+	alert("Item Added!");
         setSubmitting(true);
         fetch('/items', {
             method: 'POST',
