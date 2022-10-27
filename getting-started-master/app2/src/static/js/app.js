@@ -75,7 +75,7 @@ function AddItemForm({ onNewItem }) {
 
     const submitNewItem = e => {
         e.preventDefault();
-        setSubmitting(true);
+        setSubmitting(false);
         fetch('/items', {
             method: 'POST',
             body: JSON.stringify({ name: newItem }),
@@ -90,7 +90,7 @@ function AddItemForm({ onNewItem }) {
     };
 
     return (
-        <Form onSubmit={submitNewItem}>
+        <Form onSubmit="return false;">
             <InputGroup className="mb-3">
                 <Form.Control
                     value={newItem}
